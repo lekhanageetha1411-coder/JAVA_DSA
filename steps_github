@@ -1,0 +1,68 @@
+Steps to Push Code from VS Code to GitHub
+
+Here’s a simple workflow you can note down and reuse whenever you want to push your Java programs from VS Code to GitHub.
+
+One-time Setup
+
+Install Git
+
+Check with: git --version
+
+If not installed, download from git-scm.com.
+
+Configure Git (first time only)
+
+git config --global user.name "YourName"
+git config --global user.email "youremail@example.com"
+
+Regular Workflow
+
+Initialize Git in your project folder
+
+git init
+
+Add your files
+
+git add .
+
+Commit your changes
+
+git commit -m "Initial commit: LinearSearch program"
+
+Link your local repo to GitHub
+
+git remote add origin https://github.com/YourUsername/RepoName.git
+
+Set branch name and push (first time)
+
+git branch -M main
+git push --set-upstream origin main
+
+After Setup (Daily Use)
+
+Make changes in VS Code.
+
+Stage changes:
+
+git add .
+
+Commit changes:
+
+git commit -m "Updated LinearSearch program"
+
+Push changes:
+
+git push
+
+Optional Extras
+
+Pull changes from GitHub (if you edit files online):
+
+git pull
+
+Create a new branch (for experiments):
+
+git checkout -b new-feature
+git push origin new-feature
+
+This note gives you a clean checklist to follow every time you want to sync your VS Code project with GitHub.
